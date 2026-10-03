@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Portal Warga Mandiri — Dashboard')
-@section('description', 'Dashboard layanan administrasi mandiri warga digital Desa / Kalurahan.')
+@section('description', 'Dashboard layanan administrasi mandiri warga digital Desa / Desa.')
 
 @section('content')
 {{-- Breadcrumb & Welcome Banner --}}

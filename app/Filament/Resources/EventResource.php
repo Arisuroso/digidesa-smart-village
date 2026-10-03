@@ -19,28 +19,30 @@ class EventResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+     protected static ?string $navigationLabel = 'Agenda Kegiatan';
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('title')
+                Forms\Components\TextInput::make('Judul')
                     ->required()
                     ->maxLength(191),
                 Forms\Components\TextInput::make('slug')
                     ->required()
                     ->maxLength(191),
-                Forms\Components\Textarea::make('description')
+                Forms\Components\Textarea::make('Deskripsi')
                     ->columnSpanFull(),
-                Forms\Components\TextInput::make('location')
+                Forms\Components\TextInput::make('Lokasi')
                     ->maxLength(191),
-                Forms\Components\DateTimePicker::make('start_datetime')
+                Forms\Components\DateTimePicker::make('Tanggal Mulai')
                     ->required(),
-                Forms\Components\DateTimePicker::make('end_datetime'),
-                Forms\Components\TextInput::make('organizer')
+                Forms\Components\DateTimePicker::make('Tanggal Selesai'),
+                Forms\Components\TextInput::make('Pelaksana')
                     ->maxLength(191),
-                Forms\Components\TextInput::make('contact_person')
+                Forms\Components\TextInput::make('Kontak')
                     ->maxLength(191),
-                Forms\Components\TextInput::make('contact_phone')
+                Forms\Components\TextInput::make('No HP')
                     ->tel()
                     ->maxLength(191),
                 Forms\Components\FileUpload::make('image')

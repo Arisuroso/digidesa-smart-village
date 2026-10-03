@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Pengumuman Resmi')
-@section('description', 'Daftar pengumuman dan edaran resmi dari Kalurahan Condongcatur.')
+@section('description', 'Daftar pengumuman dan edaran resmi dari Desa Bero Jaya Timur.')
 
 @section('content')
 <div class="breadcrumb-section">

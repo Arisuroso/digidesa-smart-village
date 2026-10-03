@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Geografis & Peta Wilayah')
-@section('description', 'Kondisi geografis, batas wilayah, dan data padukuhan Kalurahan Condongcatur, Sleman.')
+@section('description', 'Kondisi geografis, batas wilayah, dan data padukuhan Desa Bero Jaya Timur, Tungkal Jaya.')
 
 @section('content')
 <div class="breadcrumb-section">
@@ -35,7 +35,7 @@
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
                 </div>
                 <h3 class="font-bold text-gray-900 text-lg mb-1">Kapanewon & Kab</h3>
-                <p class="text-xl font-bold text-green-900 mb-2">Depok, Sleman</p>
+                <p class="text-xl font-bold text-green-900 mb-2">Tungkal JayaSleman</p>
                 <p class="text-xs text-gray-500">Provinsi Daerah Istimewa Yogyakarta (Kode Pos: 55283)</p>
             </div>
 
@@ -51,7 +51,7 @@
 
         {{-- Padukuhan Table --}}
         <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-            <h2 class="text-xl font-bold text-gray-900 mb-6">Daftar 18 Padukuhan di Condongcatur</h2>
+            <h2 class="text-xl font-bold text-gray-900 mb-6">Daftar 18 Padukuhan di Bero Jaya Timur</h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-sm text-gray-600">
                     <thead class="bg-slate-50 text-gray-900 font-bold border-b border-gray-100">

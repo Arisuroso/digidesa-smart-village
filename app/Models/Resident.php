@@ -71,22 +71,22 @@ class Resident extends Model
     }
 
     // Relationships
-    public function padukuhan(): BelongsTo
+    public function Dusun(): BelongsTo
     {
         return $this->belongsTo(Padukuhan::class);
     }
 
-    public function family(): BelongsTo
+    public function Keluarga(): BelongsTo
     {
         return $this->belongsTo(Family::class);
     }
 
-    public function rt(): BelongsTo
+    public function RT(): BelongsTo
     {
         return $this->belongsTo(Rt::class);
     }
 
-    public function rw(): BelongsTo
+    public function RW(): BelongsTo
     {
         return $this->belongsTo(Rw::class);
     }

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Transparansi APBKal')
-@section('description', 'Keterbukaan Informasi Anggaran Pendapatan dan Belanja Kalurahan (APBKal) Condongcatur.')
+@section('description', 'Keterbukaan Informasi Anggaran Pendapatan dan Belanja Desa (APBKal) Bero Jaya Timur.')
 
 @section('content')
 <div class="breadcrumb-section">
@@ -23,28 +23,28 @@
         {{-- Overview Cards --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             <div class="bg-gradient-to-br from-green-600 to-green-800 text-white rounded-3xl p-6 shadow-md">
-                <div class="text-xs uppercase font-semibold tracking-wider text-green-200 mb-1">Pendapatan Kalurahan</div>
-                <div class="text-3xl font-black mb-2">Rp {{ number_format($budget?->total_income ?? 3850000000, 0, ',', '.') }}</div>
+                <div class="text-xs uppercase font-semibold tracking-wider text-green-200 mb-1">Pendapatan Desa</div>
+                <div class="text-3xl font-black mb-2">Rp {{ number_format($budget?->total_income ?? 373456000, 0, ',', '.') }}</div>
                 <div class="text-xs text-green-100">Rencana Anggaran {{ $budget?->fiscal_year ?? date('Y') }}</div>
             </div>
 
             <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white rounded-3xl p-6 shadow-md">
-                <div class="text-xs uppercase font-semibold tracking-wider text-blue-200 mb-1">Belanja Kalurahan</div>
-                <div class="text-3xl font-black mb-2">Rp {{ number_format($budget?->total_expense ?? 3780000000, 0, ',', '.') }}</div>
+                <div class="text-xs uppercase font-semibold tracking-wider text-blue-200 mb-1">Belanja Desa</div>
+                <div class="text-3xl font-black mb-2">Rp {{ number_format($budget?->total_expense ?? 1000000000, 0, ',', '.') }}</div>
                 <div class="text-xs text-blue-100">Alokasi Belanja & Pembangunan</div>
             </div>
 
             <div class="bg-gradient-to-br from-amber-500 to-amber-700 text-white rounded-3xl p-6 shadow-md">
                 <div class="text-xs uppercase font-semibold tracking-wider text-amber-200 mb-1">Pembiayaan / SILPA</div>
                 <div class="text-3xl font-black mb-2">Rp {{ number_format($budget?->total_financing ?? 70000000, 0, ',', '.') }}</div>
-                <div class="text-xs text-amber-100">Netto Pembiayaan Kalurahan</div>
+                <div class="text-xs text-amber-100">Netto Pembiayaan Desa</div>
             </div>
         </div>
 
         {{-- Income Table --}}
         <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100 mb-12">
             <h2 class="text-xl font-bold text-gray-900 mb-6 text-green-700 flex items-center gap-2">
-                <span>💰</span> Rincian Pendapatan Kalurahan
+                <span>💰</span> Rincian Pendapatan Desa
             </h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-sm text-gray-600">
@@ -75,7 +75,7 @@
         {{-- Expense Table --}}
         <div class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
             <h2 class="text-xl font-bold text-gray-900 mb-6 text-blue-700 flex items-center gap-2">
-                <span>🏗️</span> Rincian Belanja Kalurahan
+                <span>🏗️</span> Rincian Belanja Desa
             </h2>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-sm text-gray-600">

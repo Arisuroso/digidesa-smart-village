@@ -32,7 +32,7 @@ class StatsOverviewWidget extends BaseWidget
                 ->color($pendingAduan > 0 ? 'danger' : 'success'),
 
             Stat::make('Total Penduduk Terdata', number_format($totalPenduduk))
-                ->description('Warga Kalurahan Condongcatur')
+                ->description('Warga Desa Bero Jaya Timur')
                 ->descriptionIcon('heroicon-m-users')
                 ->color('primary'),
 

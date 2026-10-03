@@ -9,4 +9,8 @@ use Filament\Resources\Pages\CreateRecord;
 class CreateResident extends CreateRecord
 {
     protected static string $resource = ResidentResource::class;
+    public function getHeading(): string
+    {
+        return 'Create Data Warga';
+    }
 }

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Kontak Kami')
-@section('description', 'Hubungi Kalurahan Condongcatur, alamat kantor, telepon, email, dan Google Maps.')
+@section('description', 'Hubungi Desa Bero Jaya Timur, alamat kantor, telepon, email, dan Google Maps.')
 
 @section('content')
 <div class="breadcrumb-section">
@@ -22,8 +22,8 @@
             {{-- Contact Info --}}
             <div class="space-y-6">
                 <div>
-                    <span class="badge badge-primary uppercase mb-2">Kantor Kalurahan</span>
-                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Kalurahan Condongcatur</h2>
+                    <span class="badge badge-primary uppercase mb-2">Kantor Desa</span>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Desa Bero Jaya Timur</h2>
                     <p class="text-gray-600 text-sm leading-relaxed">
                         Kami siap melayani kebutuhan informasi dan administrasi warga. Silakan hubungi kami atau kunjungi kantor pelayanan pada jam kerja.
                     </p>
@@ -36,7 +36,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-gray-900 text-sm">Alamat Kantor</h4>
-                            <p class="text-xs text-gray-600">Jl. Manggis No. 1, Condongcatur, Depok, Sleman, D.I. Yogyakarta 55283</p>
+                            <p class="text-xs text-gray-600">Jl. Manggis No. 1, Bero Jaya Timur, Tungkal Jaya, Musi Banyuasin, Sumatera Selatan55283</p>
                         </div>
                     </div>
 
@@ -56,7 +56,7 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-gray-900 text-sm">Email Resmi</h4>
-                            <p class="text-xs text-gray-600">condongcatur1946@gmail.com</p>
+                            <p class="text-xs text-gray-600">Bero Jaya Timur1946@gmail.com</p>
                         </div>
                     </div>
                 </div>

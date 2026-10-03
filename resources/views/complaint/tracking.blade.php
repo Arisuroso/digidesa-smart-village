@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Lacak Pengaduan')
-@section('description', 'Status penanganan pengaduan warga Condongcatur.')
+@section('description', 'Status penanganan pengaduan warga Bero Jaya Timur.')
 
 @section('content')
 <div class="breadcrumb-section">
@@ -33,7 +33,7 @@
 
                 @if($complaint->response)
                 <div class="p-4 bg-blue-50 rounded-xl border border-blue-100 text-sm">
-                    <div class="font-bold text-blue-900 mb-1">Tanggapan Petugas Kalurahan:</div>
+                    <div class="font-bold text-blue-900 mb-1">Tanggapan Petugas Desa:</div>
                     <div class="text-blue-800">{!! nl2br(e($complaint->response)) !!}</div>
                 </div>
                 @endif

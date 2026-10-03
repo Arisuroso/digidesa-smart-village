@@ -19,17 +19,22 @@ class LetterTypeResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
+     protected static ?string $navigationLabel = 'Jenis Surat';
+
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('code')
+                ->label('Kode')
                     ->required()
                     ->maxLength(191),
                 Forms\Components\TextInput::make('name')
+                    ->label('Jenis Surat')
                     ->required()
                     ->maxLength(191),
                 Forms\Components\Textarea::make('description')
+                ->label('Deskripsi')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('requirements'),
                 Forms\Components\TextInput::make('template_path')
@@ -37,10 +42,12 @@ class LetterTypeResource extends Resource
                 Forms\Components\Toggle::make('is_active')
                     ->required(),
                 Forms\Components\TextInput::make('estimated_days')
+                    ->label('Estimasi (Hari)')
                     ->required()
                     ->numeric()
                     ->default(1),
                 Forms\Components\TextInput::make('fee')
+                    ->label('Biaya')
                     ->required()
                     ->numeric()
                     ->default(0.00),

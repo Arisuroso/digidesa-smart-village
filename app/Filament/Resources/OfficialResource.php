@@ -20,7 +20,7 @@ class OfficialResource extends Resource
 
     public static function form(Form $form): Form
     {
-        return $form
+        return $form 
             ->schema([
                 Forms\Components\Section::make('Data Pamong & Perangkat')
                     ->schema([
@@ -34,8 +34,7 @@ class OfficialResource extends Resource
                             ->label('Pangkat / Golongan'),
                         Forms\Components\TextInput::make('phone')
                             ->label('No HP / WhatsApp'),
-                        Forms\Components\FileUpload::make('photo_path')
-                            ->label('Foto Perangkat')
+                        Forms\Components\FileUpload::make('photo')
                             ->image()
                             ->directory('officials'),
                         Forms\Components\TextInput::make('sort_order')
@@ -53,7 +52,7 @@ class OfficialResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('photo_path')->label('Foto'),
+                Tables\Columns\ImageColumn::make('photo')->label('Foto'),
                 Tables\Columns\TextColumn::make('name')->label('Nama')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('position')->label('Jabatan')->searchable()->sortable(),
                 Tables\Columns\TextColumn::make('phone')->label('Telepon'),

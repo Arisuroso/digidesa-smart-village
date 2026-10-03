@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Transparansi Pembangunan')
-@section('description', 'Data progres dan realisasi proyek pembangunan fisik Kalurahan Condongcatur.')
+@section('description', 'Data progres dan realisasi proyek pembangunan fisik Desa Bero Jaya Timur.')
 
 @section('content')
 <div class="breadcrumb-section">

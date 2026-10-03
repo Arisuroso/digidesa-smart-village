@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Demografi & Statistik Penduduk')
-@section('description', 'Statistik kependudukan, komposisi jenis kelamin, dan usia warga Kalurahan Condongcatur.')
+@section('description', 'Statistik kependudukan, komposisi jenis kelamin, dan usia warga Desa Bero Jaya Timur.')
 
 @section('content')
 <div class="breadcrumb-section">

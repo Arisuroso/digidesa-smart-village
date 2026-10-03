@@ -16,4 +16,8 @@ class EditAnnouncement extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+    public function getHeading(): string
+    {
+        return 'Edit Pengumuman';
+    }
 }

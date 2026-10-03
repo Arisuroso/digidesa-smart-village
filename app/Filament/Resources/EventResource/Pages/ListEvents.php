@@ -16,4 +16,8 @@ class ListEvents extends ListRecords
             Actions\CreateAction::make(),
         ];
     }
+    public function getHeading(): string
+    {
+        return 'Agenda Kegiatan';
+    }
 }

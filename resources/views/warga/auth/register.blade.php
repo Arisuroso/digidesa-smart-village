@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Pendaftaran Akun Warga Mandiri')
-@section('description', 'Pendaftaran akun baru Portal Layanan Mandiri Digital Desa/Kalurahan menggunakan NIK E-KTP.')
+@section('description', 'Pendaftaran akun baru Portal Layanan Mandiri Digital Desa/Desa menggunakan NIK E-KTP.')
 
 @section('content')
 <div class="min-h-[80vh] py-12 lg:py-16 bg-slate-50 dark:bg-slate-900/50 flex items-center justify-center">

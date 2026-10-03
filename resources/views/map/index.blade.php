@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Peta Interaktif Wilayah')
-@section('description', 'Peta interaktif Kalurahan Condongcatur, Sleman dengan lokasi padukuhan, UMKM, dan objek wisata.')
+@section('description', 'Peta interaktif Desa Bero Jaya Timur, Sleman dengan lokasi padukuhan, UMKM, dan objek wisata.')
 
 @push('head')
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -10,7 +10,7 @@
 @section('content')
 <div class="breadcrumb-section">
     <div class="container-sid">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Peta Interaktif Condongcatur</h1>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Peta Interaktif Bero Jaya Timur</h1>
         <div class="breadcrumb">
             <a href="{{ route('home') }}">Beranda</a>
             <span class="sep">/</span>
@@ -32,15 +32,15 @@
 @push('scripts')
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-    const map = L.map('map').setView([-7.7500, 110.3833], 14);
+    const map = L.map('map').setView([-2.2294695653181127, 103.90934404597667], 14);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors | Kalurahan Condongcatur'
+        attribution: '&copy; OpenStreetMap contributors | Desa Bero Jaya Timur'
     }).addTo(map);
 
-    // Kantor Kalurahan Marker
-    L.marker([-7.7500, 110.3833]).addTo(map)
-        .bindPopup('<b>Kantor Kalurahan Condongcatur</b><br>Jl. Manggis No. 1, Depok, Sleman')
+    // Kantor Desa Marker
+    L.marker([-2.2294695653181127, 103.90934404597667]).addTo(map)
+        .bindPopup('<b>Kantor Desa Bero Jaya Timur</b><br>RT 004 Dusun 1 Bero jaya timur, Tungkal Jaya Musi Banyuasin')
         .openPopup();
 </script>
 @endpush

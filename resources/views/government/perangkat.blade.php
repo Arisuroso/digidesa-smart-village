@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Perangkat Kalurahan')
-@section('description', 'Daftar pamong dan perangkat Kalurahan Condongcatur, Sleman.')
+@section('title', 'Perangkat Desa')
+@section('description', 'Daftar pamong dan perangkat Desa Bero Jaya Timur, TUngkal Jaya, Musi Banyuasin')
 
 @section('content')
 <div class="breadcrumb-section">
     <div class="container-sid">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Perangkat Kalurahan</h1>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Perangkat Desa</h1>
         <div class="breadcrumb">
             <a href="{{ route('home') }}">Beranda</a>
             <span class="sep">/</span>
@@ -23,11 +23,12 @@
             @foreach($officials as $official)
             <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 text-center hover:shadow-md transition-shadow">
                 <div class="w-28 h-28 mx-auto rounded-2xl overflow-hidden mb-4 bg-slate-100">
+                    
                     <img
-                        src="{{ $official->photo_path ? Storage::url($official->photo_path) : placeholder_image(200, 200, $official->name) }}"
+                        src="{{ $official->photo ? Storage::url($official->photo) : placeholder_image(200, 200, $official->name)}}"
                         alt="{{ $official->name }}"
                         class="w-full h-full object-cover"
-                    >
+                    > 
                 </div>
                 <h3 class="font-bold text-gray-900 text-base mb-1">{{ $official->name }}</h3>
                 <p class="badge badge-primary text-xs mb-3">{{ $official->position }}</p>

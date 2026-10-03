@@ -41,7 +41,7 @@ class UserSeeder extends Seeder
         $lurah = User::firstOrCreate(
             ['email' => 'lurah@condongcatur.go.id'],
             [
-                'name' => 'Lurah Condongcatur',
+                'name' => 'Kepala Desa',
                 'password' => Hash::make('Lurah@1234'),
                 'email_verified_at' => now(),
             ]

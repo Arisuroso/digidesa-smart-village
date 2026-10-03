@@ -13,7 +13,12 @@ class ListArticles extends ListRecords
     protected function getHeaderActions(): array
     {
         return [
-            Actions\CreateAction::make(),
+            Actions\CreateAction::make()
+             ->label('Tambah Data Baru'), // Mengubah teks tombol,
         ];
+    }
+    public function getHeading(): string
+    {
+        return 'Berita dan Artikel';
     }
 }

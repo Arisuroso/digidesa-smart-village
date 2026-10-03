@@ -11,6 +11,7 @@ class GovController extends Controller
     public function struktur()
     {
         $lurah = Official::where('position', 'like', '%Lurah%')->first();
+        //echo $lurah; exit();
         $sekretaris = Official::where('position', 'like', '%Carik%')->orWhere('position', 'like', '%Sekretaris%')->first();
         $officials = Official::where('is_active', true)->orderBy('sort_order')->get();
 

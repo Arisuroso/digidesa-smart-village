@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Beranda Resmi')
-@section('description', 'Website Resmi Pemerintah Kalurahan Condongcatur — Pusat informasi publik, layanan administrasi kependudukan mandiri, dan transparansi tata kelola kalurahan.')
+@section('description', 'Website Resmi Pemerintah Desa Bero Jaya Timur — Pusat informasi publik, layanan administrasi kependudukan mandiri, dan transparansi tata kelola Desa.')
 
 @section('content')
 
@@ -21,7 +21,7 @@
                 {{-- Government Official Badge --}}
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-900/60 border border-blue-700/60 text-blue-200 text-xs font-semibold backdrop-blur-sm">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span>{{ \App\Services\SettingService::getValue('village_name', 'Pemerintah Kalurahan Condongcatur') }}</span>
+                    <span>{{ \App\Services\SettingService::getValue('village_name', 'Pemerintah Desa Bero Jaya Timur') }}</span>
                 </div>
 
                 {{-- Headline --}}
@@ -31,7 +31,7 @@
 
                 {{-- Subtitle --}}
                 <p class="text-base lg:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl">
-                    {{ \App\Services\SettingService::getValue('hero_subtitle', \App\Services\SettingService::getValue('village_tagline', 'Akses layanan mandiri kependudukan, transparansi anggaran, publikasi warta resmi, dan data statistik kalurahan secara digital, cepat, dan transparan.')) }}
+                    {{ \App\Services\SettingService::getValue('hero_subtitle', \App\Services\SettingService::getValue('village_tagline', 'Akses layanan mandiri kependudukan, transparansi anggaran, publikasi warta resmi, dan data statistik Desa secara digital, cepat, dan transparan.')) }}
                 </p>
 
                 {{-- Action Buttons --}}
@@ -131,7 +131,7 @@
                                             @elseif($banner->media_type === 'youtube')
                                                 YouTube Video
                                             @else
-                                                Warta Kalurahan
+                                                Warta Desa
                                             @endif
                                         </span>
                                     </div>
@@ -156,14 +156,14 @@
                             @empty
                             <div class="swiper-slide relative">
                                 <img
-                                    src="{{ placeholder_image(800, 600, 'Kantor Kalurahan Condongcatur') }}"
-                                    alt="Kalurahan Condongcatur"
+                                    src="{{ placeholder_image(800, 600, 'Kantor Desa Bero Jaya Timur') }}"
+                                    alt="Desa Bero Jaya Timur"
                                     class="w-full h-full object-cover"
                                 >
                                 <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
                                 <div class="absolute bottom-0 left-0 right-0 p-6 text-left">
-                                    <h3 class="text-lg font-bold text-white">Kantor Pelayanan Pemerintah Kalurahan</h3>
-                                    <p class="text-xs text-slate-300 mt-1">Jl. Utama Condongcatur, Depok, Sleman, D.I. Yogyakarta</p>
+                                    <h3 class="text-lg font-bold text-white">Kantor Pelayanan Pemerintah Desa</h3>
+                                    <p class="text-xs text-slate-300 mt-1">Jl. Utama Bero Jaya Timur, Tungkal Jaya, Musi Banyuasin, Sumatera Selatan</p>
                                 </div>
                             </div>
                             @endforelse
@@ -308,7 +308,7 @@
             <div>
                 <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Statistik & Indikator</span>
                 <h2 id="stats-title" class="text-xl lg:text-2xl font-black text-slate-900 dark:text-white tracking-tight mt-0.5">
-                    Data Kependudukan & Pembangunan Kalurahan
+                    Data Kependudukan & Pembangunan Desa
                 </h2>
             </div>
             <a href="{{ route('statistik.kependudukan') }}" class="text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 inline-flex items-center gap-1.5">
@@ -372,7 +372,7 @@
             <div>
                 <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Warta & Publikasi</span>
                 <h2 id="news-title" class="text-xl lg:text-2xl font-black text-slate-900 dark:text-white tracking-tight mt-0.5">
-                    Kabar Terkini Pemerintahan Kalurahan
+                    Kabar Terkini Pemerintahan Desa
                 </h2>
             </div>
             <a href="{{ route('berita.index') }}" class="text-xs font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 inline-flex items-center gap-1.5">
@@ -579,18 +579,18 @@
 </section>
 
 {{-- ============================================================
-     OFFICIALS & PAMONG SECTION (Jajaran Pemerintahan Kalurahan)
+     OFFICIALS & PAMONG SECTION (Jajaran Pemerintahan Desa)
 ============================================================ --}}
 <section class="py-14 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800" aria-labelledby="officials-title">
     <div class="container-sid">
         
         <div class="text-center max-w-xl mx-auto mb-10">
-            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Aparatur Kalurahan</span>
+            <span class="text-xs font-bold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Aparatur Desa</span>
             <h2 id="officials-title" class="text-xl lg:text-3xl font-black text-slate-900 dark:text-white tracking-tight mt-1">
-                Pimpinan & Pamong Kalurahan
+                Pimpinan & Pamong Desa
             </h2>
             <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
-                Jajaran aparatur pemerintah Kalurahan Condongcatur yang berdedikasi melayani masyarakat.
+                Jajaran aparatur pemerintah Desa Bero Jaya Timur yang berdedikasi melayani masyarakat.
             </p>
         </div>
 
@@ -599,7 +599,7 @@
             <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/80 text-center hover:shadow-md transition-all">
                 <div class="w-20 h-20 mx-auto rounded-2xl overflow-hidden bg-slate-200 mb-3 border border-slate-300 dark:border-slate-600">
                     <img
-                        src="{{ $official->photo_path ? Storage::url($official->photo_path) : placeholder_image(160, 160, $official->name) }}"
+                        src="{{ $official->photo ? Storage::url($official->photo) : placeholder_image(160, 160, $official->name) }}"
                         alt="{{ $official->name }}"
                         class="w-full h-full object-cover"
                         loading="lazy"
@@ -610,7 +610,7 @@
             </div>
             @empty
             <div class="col-span-full py-8 text-center text-xs text-slate-400">
-                Data pamong kalurahan belum tersedia.
+                Data pamong Desa belum tersedia.
             </div>
             @endforelse
         </div>
@@ -637,10 +637,10 @@
             Layanan Administrasi Digital Terpadu
         </span>
         <h2 id="cta-title" class="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-tight tracking-tight mb-4">
-            Ajukan Surat Keterangan Tanpa Antre di Kantor Kalurahan
+            Ajukan Surat Keterangan Tanpa Antre di Kantor Desa
         </h2>
         <p class="text-xs sm:text-sm text-blue-100/90 leading-relaxed mb-8">
-            Warga Kalurahan Condongcatur kini dapat mengajukan berbagai jenis surat keterangan resmi, memantau proses verifikasi, dan mengunduh dokumen bertanda tangan elektronik (TTE) kapan saja.
+            Warga Desa Bero Jaya Timur kini dapat mengajukan berbagai jenis surat keterangan resmi, memantau proses verifikasi, dan mengunduh dokumen bertanda tangan elektronik (TTE) kapan saja.
         </p>
 
         <div class="flex flex-wrap items-center justify-center gap-3">

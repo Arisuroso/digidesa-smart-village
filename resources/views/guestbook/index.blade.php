@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Buku Tamu Digital')
-@section('description', 'Buku Tamu Digital Kalurahan Condongcatur.')
+@section('description', 'Buku Tamu Digital Desa Bero Jaya Timur.')
 
 @section('content')
 <div class="breadcrumb-section">

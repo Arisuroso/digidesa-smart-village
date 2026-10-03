@@ -104,7 +104,7 @@
                     </div>
 
                     <div class="p-4 rounded-2xl bg-blue-50/70 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/50 text-blue-800 dark:text-blue-300 text-[11px] leading-relaxed">
-                        💡 <strong>Catatan Kependudukan:</strong> Perubahan data NIK, Nama KTP, dan Alamat Domisili harus melalui loket pelayanan administrasi kantor Kalurahan/Desa.
+                        💡 <strong>Catatan Kependudukan:</strong> Perubahan data NIK, Nama KTP, dan Alamat Domisili harus melalui loket pelayanan administrasi kantor Desa/Desa.
                     </div>
                 </div>
             </div>

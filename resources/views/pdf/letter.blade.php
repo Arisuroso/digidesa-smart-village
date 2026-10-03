@@ -34,10 +34,10 @@
 
     {{-- KOP SURAT --}}
     <div class="kop">
-        <div class="kop-title-kab">Pemerintah Kabupaten Sleman</div>
-        <div class="kop-title-kec">Kapanewon Depok</div>
-        <div class="kop-title-des">Kalurahan Condongcatur</div>
-        <div class="kop-alamat">Jl. Manggis No. 1, Condongcatur, Depok, Sleman 55283 | Telp: (0274) 881094 | Email: condongcatur1946@gmail.com</div>
+        <div class="kop-title-kab">Pemerintah Kabupaten Musi Banyuasin</div>
+        <div class="kop-title-kec">Kecamatan Tungkal Jaya</div>
+        <div class="kop-title-des">Desa Bero Jaya Timur</div>
+        <div class="kop-alamat">RT 004 Dusun 01 | Email: Pemdesberojayatimur@gmail.com</div>
     </div>
 
     {{-- JUDUL SURAT --}}
@@ -47,7 +47,7 @@
     </div>
 
     {{-- ISI SURAT --}}
-    <p>Yang bertanda tangan di bawah ini Lurah Condongcatur, Kapanewon Depok, Kabupaten Sleman, menerangkan bahwa:</p>
+    <p>Yang bertanda tangan di bawah ini Lurah Bero Jaya Timur, Kecamatan Tungkal Jaya,Kabupaten Musi Banyuasin, menerangkan bahwa:</p>
 
     <table class="content-table">
         <tr>
@@ -68,7 +68,7 @@
     </table>
 
     <p style="text-align: justify; text-indent: 30px;">
-        Orang tersebut di atas adalah benar-benar warga yang berdomisili/terdaftar di wilayah Kalurahan Condongcatur. Surat keterangan ini dibuat untuk dipergunakan sebagaimana mestinya.
+        Orang tersebut di atas adalah benar-benar warga yang berdomisili/terdaftar di wilayah Desa Bero Jaya Timur. Surat keterangan ini dibuat untuk dipergunakan sebagaimana mestinya.
     </p>
 
     {{-- TANDA TANGAN & TTE QR CODE --}}
@@ -76,13 +76,13 @@
         <tr>
             <td></td>
             <td>
-                <div>Condongcatur, {{ $date }}</div>
-                <div style="font-weight: bold; margin-bottom: 10px;">Lurah Condongcatur</div>
+                <div>Bero Jaya Timur, {{ $date }}</div>
+                <div style="font-weight: bold; margin-bottom: 10px;">Kepala Desa Bero Jaya Timur</div>
                 <div class="stempel-box">
                     <div class="stempel-badge">Tanda Tangan Digital</div>
                     <div class="qr-box">Verifikasi Keabsahan: {{ $verificationUrl }}</div>
                 </div>
-                <div style="font-weight: bold; text-decoration: underline;">Drs. H. Ahmad Mukhlis, M.Si</div>
+                <div style="font-weight: bold; text-decoration: underline;">Sidarto</div>
             </td>
         </tr>
     </table>

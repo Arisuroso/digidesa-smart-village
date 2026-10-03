@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('title', 'Lembaga Kalurahan')
-@section('description', 'Daftar lembaga desa di Kalurahan Condongcatur (BPKal, LPMK, PKK, Karang Taruna, Linmas, dll).')
+@section('title', 'Lembaga Desa')
+@section('description', 'Daftar lembaga desa di Desa Bero Jaya Timur (LPMK, PKK, Karang Taruna, Linmas, dll).')
 
 @section('content')
 <div class="breadcrumb-section">
     <div class="container-sid">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Lembaga Desa / Kalurahan</h1>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Lembaga Desa</h1>
         <div class="breadcrumb">
             <a href="{{ route('home') }}">Beranda</a>
             <span class="sep">/</span>

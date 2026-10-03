@@ -108,7 +108,7 @@
                     @endphp
                     <div class="overflow-hidden whitespace-nowrap flex-1 text-slate-300 text-[11px] font-medium"
                          x-data="{
-                             items: {{ json_encode($tickerAnnouncements->isEmpty() ? ['Selamat datang di Portal Informasi & Layanan Mandiri Digital Kalurahan Condongcatur', 'Pelayanan administrasi kependudukan mandiri online 24 jam nonstop', 'Transparansi anggaran dan publikasi resmi pemerintahan kalurahan'] : $tickerAnnouncements->pluck('title')->toArray()) }},
+                             items: {{ json_encode($tickerAnnouncements->isEmpty() ? ['Selamat datang di Portal Informasi & Layanan Mandiri Digital Desa Bero Jaya Timur', 'Pelayanan administrasi kependudukan mandiri online 24 jam nonstop', 'Transparansi anggaran dan publikasi resmi pemerintahan Desa'] : $tickerAnnouncements->pluck('title')->toArray()) }},
                              current: 0,
                              init() {
                                  setInterval(() => {
@@ -157,10 +157,10 @@
                         </div>
                         <div>
                             <div class="navbar-name font-black text-sm sm:text-base leading-tight text-white tracking-tight">
-                                {{ \App\Services\SettingService::getValue('village_name', 'Pemerintah Kalurahan') }}
+                                {{ \App\Services\SettingService::getValue('village_name', 'Pemdes Bero Jaya Timur') }}
                             </div>
                             <div class="navbar-tagline text-[10px] sm:text-xs text-blue-200/80 font-medium">
-                                Kapanewon {{ \App\Services\SettingService::getValue('village_subdistrict', 'Depok') }}, {{ \App\Services\SettingService::getValue('village_district', 'Sleman') }}
+                                Kecamatan {{ \App\Services\SettingService::getValue('village_subdistrict', 'Tungkal Jaya') }}, {{ \App\Services\SettingService::getValue('village_district', 'Musi Banyuasin') }}
                             </div>
                         </div>
                     </a>
@@ -172,17 +172,17 @@
                                 ['label' => 'Beranda', 'route' => 'home', 'children' => []],
                                 ['label' => 'Profil', 'route' => '#', 'children' => [
                                     ['label' => 'Visi & Misi', 'desc' => 'Arah & komitmen pembangunan desa', 'route' => 'profil.visi-misi'],
-                                    ['label' => 'Sejarah Kalurahan', 'desc' => 'Asal usul & tonggak sejarah', 'route' => 'profil.sejarah'],
+                                    ['label' => 'Sejarah Desa', 'desc' => 'Asal usul & tonggak sejarah', 'route' => 'profil.sejarah'],
                                     ['label' => 'Geografis & Wilayah', 'desc' => 'Batas & kondisi kewilayahan', 'route' => 'profil.geografis'],
                                     ['label' => 'Demografi Penduduk', 'desc' => 'Struktur demografi kependudukan', 'route' => 'profil.demografi'],
                                 ]],
                                 ['label' => 'Pemerintahan', 'route' => '#', 'children' => [
-                                    ['label' => 'Struktur Organisasi', 'desc' => 'Bagan SOTK Kalurahan', 'route' => 'pemerintahan.struktur'],
+                                    ['label' => 'Struktur Organisasi', 'desc' => 'Bagan SOTK Desa', 'route' => 'pemerintahan.struktur'],
                                     ['label' => 'Pamong & Perangkat', 'desc' => 'Profil Lurah & jajaran pamong', 'route' => 'pemerintahan.perangkat'],
-                                    ['label' => 'Lembaga Kalurahan', 'desc' => 'BPMKal, PKK, Karang Taruna, LPMK', 'route' => 'pemerintahan.lembaga'],
+                                    ['label' => 'Lembaga Desa', 'desc' => 'BPMKal, PKK, Karang Taruna, LPMK', 'route' => 'pemerintahan.lembaga'],
                                 ]],
                                 ['label' => 'Informasi Publik', 'route' => '#', 'children' => [
-                                    ['label' => 'Berita & Publikasi', 'desc' => 'Warta & kabar resmi kalurahan', 'route' => 'berita.index'],
+                                    ['label' => 'Berita & Publikasi', 'desc' => 'Warta & kabar resmi Desa', 'route' => 'berita.index'],
                                     ['label' => 'Agenda Kegiatan', 'desc' => 'Jadwal agenda & acara desa', 'route' => 'agenda.index'],
                                     ['label' => 'Pengumuman Resmi', 'desc' => 'Surat edaran & info mendesak', 'route' => 'pengumuman.index'],
                                     ['label' => 'Galeri Dokumentasi', 'desc' => 'Foto dokumentasi kegiatan', 'route' => 'galeri.index'],
@@ -191,7 +191,7 @@
                                     ['label' => 'Statistik Kependudukan', 'desc' => 'Piramida usia & data kependudukan', 'route' => 'statistik.kependudukan'],
                                     ['label' => 'Indeks Desa Membangun (IDM)', 'desc' => 'Status kemandirian & skor IDM', 'route' => 'statistik.idm'],
                                     ['label' => 'SDGs Desa', 'desc' => 'Pencapaian 18 Tujuan SDGs', 'route' => 'statistik.sdgs'],
-                                    ['label' => 'Peta Spasial Kalurahan', 'desc' => 'Peta interaktif batas & fasilitas', 'route' => 'peta'],
+                                    ['label' => 'Peta Spasial Desa', 'desc' => 'Peta interaktif batas & fasilitas', 'route' => 'peta'],
                                 ]],
                                 ['label' => 'Transparansi', 'route' => '#', 'children' => [
                                     ['label' => 'APBDes / APBKal', 'desc' => 'Realisasi anggaran pendapatan & belanja', 'route' => 'transparansi.apbkal'],
@@ -384,8 +384,8 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="text-white font-bold text-base leading-tight">{{ \App\Services\SettingService::getValue('village_name', 'Pemerintah Kalurahan') }}</div>
-                            <div class="text-slate-400 text-xs">Kapanewon {{ \App\Services\SettingService::getValue('village_subdistrict', 'Depok') }}, {{ \App\Services\SettingService::getValue('village_district', 'Sleman') }}</div>
+                            <div class="text-white font-bold text-base leading-tight">{{ \App\Services\SettingService::getValue('village_name', 'Pemerintah Desa') }}</div>
+                            <div class="text-slate-400 text-xs">Kecamatan {{ \App\Services\SettingService::getValue('village_subdistrict', 'Depok') }}, {{ \App\Services\SettingService::getValue('village_district', 'Musi Banyuasin') }}</div>
                         </div>
                     </div>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">

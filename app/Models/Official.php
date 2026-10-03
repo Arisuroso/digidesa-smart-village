@@ -34,7 +34,7 @@ class Official extends Model
     public function attendances(): HasMany
     {
         return $this->hasMany(Attendance::class);
-    }
+    } 
 
     public function scopeActive($query)
     {

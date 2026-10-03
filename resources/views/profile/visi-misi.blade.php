@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
 @section('title', 'Visi & Misi')
-@section('description', 'Visi dan Misi Pembangunan Kalurahan Condongcatur, Kapanewon Depok, Kabupaten Sleman.')
+@section('description', 'Visi dan Misi Pembangunan Desa Bero Jaya Timur, Kecamatan Tungkal Jaya, Kabupaten Musi Banyuasin')
 
 @section('content')
 <div class="breadcrumb-section">
     <div class="container-sid">
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Visi & Misi Kalurahan</h1>
+        <h1 class="text-3xl md:text-4xl font-extrabold text-white">Visi & Misi Desa</h1>
         <div class="breadcrumb">
             <a href="{{ route('home') }}">Beranda</a>
             <span class="sep">/</span>
@@ -26,10 +26,10 @@
                 <div class="absolute top-0 right-0 -mt-10 -mr-10 w-48 h-48 bg-white/10 rounded-full blur-2xl"></div>
                 <div class="relative z-10 text-center">
                     <span class="inline-block px-4 py-1.5 rounded-full bg-amber-400 text-amber-950 font-bold text-xs uppercase tracking-widest mb-4">
-                        Visi Kalurahan Condongcatur
+                        Visi Desa Bero Jaya Timur
                     </span>
                     <blockquote class="text-2xl md:text-3xl font-extrabold leading-relaxed font-primary">
-                        "Terwujudnya Kalurahan Condongcatur yang Mandiri, Sejahtera, Berbudaya, dan Berkelanjutan Berlandaskan Semangat Gotong Royong"
+                        "Terwujudnya Desa Bero Jaya Timur yang Mandiri, Sejahtera, Berbudaya, dan Berkelanjutan Berlandaskan Semangat Gotong Royong"
                     </blockquote>
                 </div>
             </div>
@@ -39,13 +39,13 @@
                 <div class="text-center mb-10">
                     <div class="section-header-label justify-center">Program Kerja Utama</div>
                     <h2 class="section-title">Misi Pembangunan</h2>
-                    <p class="section-subtitle">Langkah strategis dalam mewujudkan visi Kalurahan Condongcatur</p>
+                    <p class="section-subtitle">Langkah strategis dalam mewujudkan visi Desa Bero Jaya Timur</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     @php
                         $misiList = [
-                            ['num' => '01', 'title' => 'Tata Kelola Pemerintahan', 'desc' => 'Mewujudkan tata kelola pemerintahan kalurahan yang bersih, transparan, akuntabel, dan berbasis teknologi informasi (Digital Village).', 'icon' => '🏛️'],
+                            ['num' => '01', 'title' => 'Tata Kelola Pemerintahan', 'desc' => 'Mewujudkan tata kelola pemerintahan Desa yang bersih, transparan, akuntabel, dan berbasis teknologi informasi (Digital Village).', 'icon' => '🏛️'],
                             ['num' => '02', 'title' => 'Pemberdayaan Ekonomi', 'desc' => 'Meningkatkan perekonomian warga melalui penguatan UMKM, BUMKal Mandiri, dan pengembangan potensi pariwisata lokal.', 'icon' => '📈'],
                             ['num' => '03', 'title' => 'Layanan Sosial & Kesehatan', 'desc' => 'Meningkatkan kualitas layanan sosial, kesehatan masyarakat, pencegahan stunting, dan perlindungan kesejahteraan keluarga.', 'icon' => '❤️'],
                             ['num' => '04', 'title' => 'Infrastruktur & Lingkungan', 'desc' => 'Pembangunan infrastruktur perdesaan yang merata, ramah lingkungan, serta pengelolaan sampah yang berkelanjutan.', 'icon' => '🌱'],

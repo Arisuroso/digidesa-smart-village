@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Verifikasi Keabsahan Surat')
-@section('description', 'Halaman publik verifikasi keabsahan dokumen dan surat resmi Kalurahan Condongcatur.')
+@section('description', 'Halaman publik verifikasi keabsahan dokumen dan surat resmi Desa Bero Jaya Timur.')
 
 @section('content')
 <div class="breadcrumb-section">
@@ -28,7 +28,7 @@
             </div>
 
             <span class="badge badge-success text-xs uppercase mb-2">DOKUMEN VALID & TERVERIFIKASI</span>
-            <h2 class="text-2xl font-bold text-gray-900 mb-6">Surat Keterangan Kalurahan Condongcatur</h2>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Surat Keterangan Desa Bero Jaya Timur</h2>
 
             <div class="bg-slate-50 p-6 rounded-2xl text-left space-y-3 text-sm mb-6 border border-slate-200">
                 <div class="flex justify-between border-b border-slate-200 pb-2">
@@ -45,7 +45,7 @@
                 </div>
                 <div class="flex justify-between border-b border-slate-200 pb-2">
                     <span class="text-gray-500">Penandatangan:</span>
-                    <span class="font-bold text-blue-900">Lurah Condongcatur (Drs. H. Ahmad Mukhlis, M.Si)</span>
+                    <span class="font-bold text-blue-900">Kepala Desa Bero Jaya Timur (Sidarto)</span>
                 </div>
                 <div class="flex justify-between">
                     <span class="text-gray-500">Token Keabsahan:</span>
@@ -54,7 +54,7 @@
             </div>
 
             <p class="text-xs text-gray-500">
-                Dokumen ini diterbitkan secara sah oleh Pemerintah Kalurahan Condongcatur, Kapanewon Depok, Kabupaten Sleman melalui Sistem Informasi Desa Condongcatur Digital.
+                Dokumen ini diterbitkan secara sah oleh Pemerintah Desa Bero Jaya Timur, Kapanewon Tungkal JayaKabupaten Sleman melalui Sistem Informasi Desa Bero Jaya Timur Digital.
             </p>
         </div>
     </div>

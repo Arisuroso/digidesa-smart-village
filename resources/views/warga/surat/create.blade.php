@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Katalog Layanan Surat Keterangan Online')
-@section('description', 'Pilih dan ajukan permohonan surat keterangan desa / kalurahan secara mandiri.')
+@section('description', 'Pilih dan ajukan permohonan surat keterangan desa / Desa secara mandiri.')
 
 @section('content')
 <div class="relative overflow-hidden bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 py-10 lg:py-12 border-b border-blue-800/40">
@@ -77,7 +77,7 @@
                         {{ $type->name }}
                     </h3>
                     <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
-                        {{ $type->description ?? 'Layanan penerbitan surat keterangan resmi dari pemerintah desa/kalurahan.' }}
+                        {{ $type->description ?? 'Layanan penerbitan surat keterangan resmi dari pemerintah desa/Desa.' }}
                     </p>
 
                     {{-- Requirements List Preview --}}
